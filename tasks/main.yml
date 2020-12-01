@@ -1,0 +1,6 @@
+- name: Create files with content
+  copy:
+    dest: "{{ item.filepath }}"
+    content: "{{ item.content }}"
+  with_items: "{{ filecreate_files }}"
+  no_log: "{{ filecreate_no_log | bool }}"

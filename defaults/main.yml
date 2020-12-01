@@ -1,0 +1,11 @@
+# A list of dicts such as the following:
+#
+#   filecreate_files:
+#     - filepath: /opt/foo
+#       content: "bar"
+#     - filepath: /opt/doo
+#       content: "that"
+#
+filecreate_files: []
+# Toggle output logging in case you want to hide sensitive file content
+filecreate_no_log: True
