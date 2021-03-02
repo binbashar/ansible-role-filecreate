@@ -2,5 +2,6 @@
   copy:
     dest: "{{ item.filepath }}"
     content: "{{ item.content }}"
+    mode: "{{ item.mode | default('0644') }}"
   with_items: "{{ filecreate_files }}"
   no_log: "{{ filecreate_no_log | bool }}"
