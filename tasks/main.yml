@@ -1,3 +1,10 @@
+- name: Create directories
+  file:
+    path: "{{ item.path }}"
+    state: directory
+    mode: "{{ item.mode | default('0755') }}"
+  with_items: "{{ filecreate_directories }}"
+
 - name: Create files with content
   copy:
     dest: "{{ item.filepath }}"
