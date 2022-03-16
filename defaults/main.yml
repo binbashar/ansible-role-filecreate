@@ -7,5 +7,12 @@
 #       content: "that"
 #
 filecreate_files: []
+# A list of strings such as the following:
+#
+#   filecreate_directories:
+#     - path: /opt/foo
+#     - path: /opt/doo
+#
+filecreate_directories: []
 # Toggle output logging in case you want to hide sensitive file content
 filecreate_no_log: True
